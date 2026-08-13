@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.about-page {
+  @apply w-full max-w-[1400px] h-auto min-h-[90vh] m-auto px-[20px] py-[50px] flex items-center justify-between gap-[20px];
+}
+
+.page-left {
+  @apply flex flex-1 flex-col gap-2;
+}
+
+.page-right {
+  @apply flex flex-1 p-[30px] items-center justify-center;
+}
+
+.page-right-image {
+  @apply w-[80%] max-w-[450px] h-auto rotate-[16deg];
+}
+
+.page-title {
+  @apply text-[8vh] font-bold text-[#453D53];
+}
+
+.detail-title-red {
+  @apply text-[8vh] font-bold text-[#DD0107];
+}
+
+.detail-title {
+  @apply text-[8vh] font-bold text-[#453D53];
+}
+
+.detail-text {
+    @apply mt-[20px] text-[14px] leading-[30px] text-[#453D53];
+}
+
+.buttons-container {
+    @apply my-[30px] flex items-center justify-start gap-[20px];
+}
+
+.button-primary {
+  @apply px-6 py-3 bg-[#4B4453] text-[2vh] text-white rounded-full text-sm hover:opacity-90 transition cursor-pointer;
+}
+
+.button-secondary {
+  @apply px-6 py-3 border border-[#4B4453] text-[#4B4453] rounded-full text-[2vh] hover:bg-[#4B4453] hover:text-white transition cursor-pointer;
+}

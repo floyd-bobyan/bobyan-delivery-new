@@ -1,0 +1,29 @@
+@reference "tailwindcss";
+
+.btnPrimary {
+  @apply px-6 py-3 bg-[#4B4453] text-[2vh] text-white rounded-full text-sm hover:opacity-90 transition cursor-pointer;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 mt-10 border border-[#4B4453] text-[#4B4453] rounded-full text-[2vh] hover:bg-[#4B4453] hover:text-white transition cursor-pointer;
+}
+
+.partners-section {
+  @apply w-full h-auto pt-[100px] pb-[50px] flex items-center justify-center;
+}
+
+.partners-details {
+  @apply flex flex-1 flex-col items-start justify-center gap-[10px];
+}
+
+.partner-details-title {
+  @apply w-[70%] text-[8vh] font-bold text-[#4B4453];
+}
+
+.partner-details-text {
+  @apply w-[70%] text-[2vh] text-[#4B4453] mt-5;
+}
+
+.partners-image {
+  @apply flex flex-1 items-end h-[80vh] w-auto object-contain;
+}

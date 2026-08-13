@@ -1,0 +1,57 @@
+@reference "tailwindcss";
+
+.heroContainer {
+  @apply w-full max-w-[1400px] min-h-[90vh] h-[100%] flex items-center justify-start px-5;
+}
+
+.heroLeft {
+  @apply h-full flex flex-3 flex-col gap-[2px] px-5;
+}
+
+.heroTitle {
+  @apply text-[8vh] font-bold text-[#4B4453];
+}
+
+.heroText {
+  @apply text-[2vh] text-[#4B4453] mt-5;
+}
+
+.heroButtons {
+  @apply flex gap-4 mt-5;
+}
+
+.heroMid {
+  @apply h-full flex flex-4 items-center justify-center px-5;
+}
+
+.heroImage {
+  @apply h-[80vh] w-auto object-contain;
+}
+
+.btnPrimary {
+  @apply px-6 py-3 bg-[#4B4453] text-[2vh] text-white rounded-full text-sm hover:opacity-90 transition cursor-pointer;
+}
+
+.btnSecondary {
+  @apply px-6 py-3 border border-[#4B4453] text-[#4B4453] rounded-full text-[2vh] hover:bg-[#4B4453] hover:text-white transition cursor-pointer;
+}
+
+.heroRight {
+  @apply h-full flex flex-2 gap-10 items-start justify-center flex-col ml-[-80px];
+}
+
+.heroStat {
+  @apply flex flex-col;
+}
+
+.statNumber {
+    @apply text-[6vh] text-[#4B4453] font-semibold; 
+}
+
+.statText {
+    @apply text-[2vh] text-[#4B4453];
+}
+
+.statImage {
+    @apply h-[150px] w-auto ml-[-20px];
+}

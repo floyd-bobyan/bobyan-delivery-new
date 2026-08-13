@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.partner-page {
+  @apply w-full max-w-[1400px] h-auto min-h-[90vh] m-auto px-[20px] py-[50px] flex items-center justify-between gap-[20px];
+}
+
+.page-left {
+  @apply flex flex-1 flex-col;
+}
+
+.page-right {
+  @apply flex flex-1 p-[30px] items-center justify-center;
+}
+
+.page-right-image {
+  @apply w-[80%] max-w-[450px] h-auto rotate-[16deg];
+}
+
+.page-title {
+  @apply text-[8vh] font-bold text-[#453D53];
+}
+
+.detail-title-red {
+  @apply text-[8vh] font-bold text-[#DD0107];
+}
+
+.detail-title {
+  @apply text-[8vh] font-bold text-[#453D53];
+}
+
+.detail-text {
+    @apply mt-[20px] text-[14px] text-[#453D53];
+}
+
+.address-wrapper {
+  @apply flex flex-col text-[#453D53] my-[10px];
+}
+
+.address-title {
+  @apply w-[200px] py-[10px] mb-[10px] border-b-2 border-b-[#DD0107];
+}
+
+.address-description {
+  @apply w-fit;
+}

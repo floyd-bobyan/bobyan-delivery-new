@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.features-section {
+    @apply w-full max-w-[1400px] min-h-[90vh] m-auto flex flex-col items-center justify-center px-[20px] py-[50px] my-[50px];
+}
+
+.features-section-top {
+    @apply w-full flex items-center justify-between gap-[20px];
+}
+
+.features-top-text {
+    @apply max-w-[1000px] flex flex-col justify-start items-start gap-[5px] text-[#4B4453]; 
+}
+
+.features-header {
+    @apply text-[50px] font-bold;
+}
+
+.font-yellow {
+    @apply text-[#FFA214];
+}
+
+.font-red {
+    @apply text-[#DD0107];
+}
+
+.features-top-image {
+    @apply h-[50vh] w-auto;
+}
+
+.features-description {
+    @apply mt-[20px] text-[14px] leading-[30px];
+}
+
+.features-section-bottom {
+    @apply mt-[50px] w-[100%] h-auto;
+}

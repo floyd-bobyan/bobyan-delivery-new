@@ -1,0 +1,41 @@
+@reference "tailwindcss";
+
+.footer {
+  @apply w-full  mt-[30px] bg-[#614C88] relative text-[#FFFFFF];
+}
+
+.footer-container {
+  @apply w-full px-[20px] pt-[60px] pb-[10px] flex flex-col justify-center items-center ;
+}
+
+.footer-main {
+    @apply  w-full max-w-[1400px] flex justify-between items-center;
+}
+
+.footer-section-left {
+    @apply flex flex-1 flex-col gap-[20px];
+}
+
+.footer-section-mid {
+    @apply flex flex-col flex-1 items-center justify-center gap-[20px] text-[#FFFFFF];
+}
+
+.footer-section-right {
+    @apply flex flex-col flex-1 items-center justify-center gap-[20px] text-[#FFFFFF];
+}
+
+.footer-right-text {
+    @apply border-b border-white p-[5px];
+}
+
+.footer-right-icons {
+    @apply flex gap-[20px] text-[28px] cursor-pointer;
+}
+
+.footer-copyright {
+    @apply m-auto mt-[20px];
+}
+
+.footer-background {
+    @apply absolute bottom-0 left-30 h-[30vh] w-auto;
+}

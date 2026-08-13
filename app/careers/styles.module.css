@@ -1,0 +1,89 @@
+@reference "tailwindcss";
+
+.careers-page {
+  @apply w-full max-w-[1400px] h-auto min-h-[90vh] m-auto px-[20px] py-[50px] flex  flex-col  justify-start gap-[20px];
+}
+
+.track-application-wrapper {
+  @apply flex flex-col gap-[20px] items-center justify-center;
+}
+
+.track-header {
+  @apply text-[20px] font-bold text-[#453D53];
+}
+
+.selector-wrapper {
+  @apply flex items-center justify-center gap-[100px] text-[#453D53];
+}
+
+.input-wrapper {
+  @apply flex gap-[10px] cursor-pointer font-bold;
+}
+
+.input-wrapper input {
+  @apply cursor-pointer;
+}
+
+.track-form {
+  @apply w-[60vw] h-[50px] flex items-center justify-center border border-[#453D53] border-[2px] rounded-[50px] cursor-pointer;
+}
+
+.track-button {
+  @apply h-full px-[20px] flex items-center justify-center gap-[10px] cursor-pointer bg-[#453D53] text-[#FFFFFF] rounded-r-[50px];
+}
+
+.track-input {
+  @apply w-[100%] py-[10px] px-[20px] outline-none;
+}
+
+.search-icon {
+  @apply text-[26px];
+}
+
+.application-details {
+  @apply min-h-[400px] flex flex-col items-center justify-center p-[20px] text-[#453D53];
+}
+
+.applications-container {
+  @apply max-w-[1200px] w-full flex flex-col gap-[30px];
+}
+
+.application-wrapper {
+  @apply w-full flex flex-col border-b border-[#453D53] p-[20px];
+}
+
+.application-top {
+  @apply flex items-start justify-between gap-[20px];
+}
+
+.application-column {
+  @apply flex flex-col gap-[10px] items-start justify-start;
+}
+
+.application-column:nth-child(2) {
+  @apply flex-1;
+}
+
+.profile-icon {
+    @apply text-[40px] text-[#453D53];
+}
+
+.item-label {
+    @apply font-bold;
+}
+
+.application-text {
+    @apply my-[20px];
+}
+
+.error-wrapper {
+  @apply flex flex-col items-center justify-center gap-[5px] p-[20px];
+}
+
+.error-image {
+  @apply max-w-[500px] h-auto;
+}
+
+.error-message {
+  @apply text-[24px];
+}

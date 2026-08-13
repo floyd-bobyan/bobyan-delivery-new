@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.modal-main {
+    @apply w-full h-full fixed top-0 left-0 p-[40px] z-50 bg-[#4B445320];
+}
+
+.modal-body {
+    @apply w-full h-full p-[20px] rounded-[10px] bg-white relative;
+}
+
+.close-modal {
+    @apply absolute top-[20px] right-[20px] cursor-pointer;
+}

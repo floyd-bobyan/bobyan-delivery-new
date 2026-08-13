@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.contacts-section {
+  @apply w-full max-w-[1400px] min-h-[70vh] m-auto flex flex-col items-center justify-center px-[20px] py-[50px] my-[50px] relative;
+}
+
+.section-bg {
+  @apply absolute flex items-center justify-center;
+}
+
+.bobyan-logo-bg {
+  @apply w-auto h-[60vh] opacity-[0.1];
+}
+
+.section-content {
+  @apply w-full absolute flex flex-col items-center justify-center gap-[50px] text-[#4B4453];
+}
+
+.content-wrapper {
+  @apply flex flex-col items-center justify-center gap-[10px];
+}
+
+.contact-item-header {
+  @apply w-[200px] py-[10px] mb-[10px] border-b-2 border-b-[#DD0107] font-bold text-center text-[24px];
+}
+
+.contact-item-content-row {
+    @apply flex gap-[50px];
+}
+
+.phone-number {
+    @apply font-bold;
+}
+
+.contact-item-content-column {
+    @apply flex flex-col items-center justify-center font-bold;
+}

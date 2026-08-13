@@ -1,0 +1,78 @@
+@reference "tailwindcss";
+
+.join-us-modal {
+    @apply h-[100%] w-full flex items-start justify-start gap-[20px] overflow-hidden;
+}
+
+.modal-image {
+    @apply h-full w-auto max-w-[50vw];
+}
+
+.form-wrapper {
+    @apply h-full overflow-y-auto;
+}
+
+.form-main, .form-checks {
+    @apply w-auto flex flex-wrap gap-[20px] py-[20px];
+}
+
+.form-header {
+    @apply text-[20px] font-bold text-[#4B4453];
+}
+
+.form-checks {
+    @apply py-1 gap-5;
+}
+
+.input-wrapper {
+    @apply flex min-w-[40%] flex-col items-start justify-start gap-[3px];
+}
+
+.input-wrapper-full {
+    @apply w-full flex-col items-start justify-start gap-[3px];
+}
+
+.input-label {
+    @apply text-[14px];
+}
+
+.form-input {
+  @apply w-full border border-gray-300 rounded-lg px-4 py-2 outline-none text-[16px];
+}
+
+.form-input-textarea {
+  @apply w-full min-h-[150px] mt-[3px] border border-gray-300 rounded-lg px-4 py-2 outline-none text-[16px];
+}
+
+.form-button {
+  @apply w-full flex items-center justify-center cursor-pointer 
+         px-6 py-3 rounded-lg bg-[#4B4453] text-white;
+}
+
+.form-success {
+    @apply h-full w-full flex flex-1 flex-col items-center justify-center gap-[10px];
+}
+
+.application-success {
+    @apply w-[200px] h-auto;
+}
+
+.success-message {
+    @apply mt-[50px] text-[20px] text-[#4B4453];
+}
+
+.reference-id {
+    @apply text-[20px] text-[#4B4453];
+}
+
+.tracker {
+    @apply font-bold;
+}
+
+.company-message {
+    @apply text-[#4B4453];
+}
+
+.page-link {
+    @apply text-[14px] text-[#DD0107]
+}
