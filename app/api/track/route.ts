@@ -27,15 +27,8 @@ export async function GET(req: Request) {
       `${SHEET_LINK}?type=${encodeURIComponent(type)}` +
       `&search=${encodeURIComponent(search)}`;
 
-    console.log("Calling Google Script:", url);
-
     const response = await fetch(url);
-
-    console.log("Google response status:", response.status);
-
     const text = await response.text();
-
-    console.log("Google response:", text);
 
     if (!response.ok) {
       return NextResponse.json(
