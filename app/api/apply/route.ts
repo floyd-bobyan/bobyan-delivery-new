@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_LINK || ""
+const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_HIRING || ""
 
 if (!GOOGLE_SCRIPT_URL) {
   throw new Error("GOOGLE_SCRIPT_URL is not defined");
