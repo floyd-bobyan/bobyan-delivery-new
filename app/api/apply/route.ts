@@ -1,14 +1,20 @@
+
 import { NextResponse } from "next/server";
-
-const SHEET_LINK = process.env.GOOGLE_SCRIPT_HIRING || ""
-
-if (!SHEET_LINK) {
-  throw new Error("Link is not defined");
-}
 
 export async function POST(req: Request) {
   try {
-    
+    const SHEET_LINK = process.env.GOOGLE_SCRIPT_HIRING;
+
+    if (!SHEET_LINK) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "GOOGLE_SCRIPT_HIRING is missing",
+        },
+        { status: 500 }
+      );
+    }
+
     const body = await req.json();
 
     const response = await fetch(SHEET_LINK, {
@@ -23,14 +29,14 @@ export async function POST(req: Request) {
 
     return NextResponse.json(data);
   } catch (error) {
+    console.error("Apply API error:", error);
+
     return NextResponse.json(
       {
         success: false,
         message: "Server error",
       },
-      {
-        status: 500,
-      },
+      { status: 500 }
     );
   }
 }

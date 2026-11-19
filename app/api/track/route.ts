@@ -1,13 +1,20 @@
+
 import { NextResponse } from "next/server";
-
-const SHEET_LINK = process.env.GOOGLE_SCRIPT_LINK || ""
-
-if (!SHEET_LINK) {
-  throw new Error("link is not defined");
-}
 
 export async function GET(req: Request) {
   try {
+    const SHEET_LINK = process.env.GOOGLE_SCRIPT_LINK;
+
+    if (!SHEET_LINK) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "GOOGLE_SCRIPT_LINK is not configured",
+        },
+        { status: 500 }
+      );
+    }
+
     const { searchParams } = new URL(req.url);
 
     const type = searchParams.get("type");
@@ -27,7 +34,11 @@ export async function GET(req: Request) {
       `${SHEET_LINK}?type=${encodeURIComponent(type)}` +
       `&search=${encodeURIComponent(search)}`;
 
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      cache: "no-store",
+      redirect: "follow",
+    });
+
     const text = await response.text();
 
     if (!response.ok) {
@@ -47,6 +58,7 @@ export async function GET(req: Request) {
     return NextResponse.json(data);
 
   } catch (error) {
+    console.error("GET API error:", error);
 
     return NextResponse.json(
       {
