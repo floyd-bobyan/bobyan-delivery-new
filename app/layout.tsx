@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
 
 import "./globals.css";
 import Header from "./sections/headers";
@@ -7,11 +6,6 @@ import Footer from "./sections/footer";
 import ReduxProvider from "./redux/providers";
 import Modal from "./modals";
 import Background from "./sections/bg";
-
-const notoSans = Noto_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   title: "Bobyan Delivery",
@@ -23,11 +17,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${notoSans.className} min-h-screen flex flex-col overflow-x-hidden`}
+        className={`min-h-screen flex flex-col overflow-x-hidden`}
       >
         {/* Content */}
         <ReduxProvider>
@@ -36,8 +41,8 @@ export default function RootLayout({
             {children}
             <Footer />
           </div>
-          
-            <Modal />
+
+          <Modal />
         </ReduxProvider>
 
         {/* Background */}

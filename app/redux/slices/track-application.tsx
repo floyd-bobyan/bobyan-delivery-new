@@ -1,7 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const API_URL = "YOUR_GOOGLE_SCRIPT_URL";
-
 interface SearchState {
   type: "id" | "email";
   search: string;
