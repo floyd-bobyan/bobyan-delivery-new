@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const SHEET_LINK = process.env.GOOGLE_SCRIPT_HIRING || ""
 
 if (!SHEET_LINK) {
-  throw new Error("SHEET_LINK is not defined");
+  throw new Error("Link is not defined");
 }
 
 export async function POST(req: Request) {
